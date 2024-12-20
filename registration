@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ranjith</title>
+        <style> 
+            body{
+                align-items: center;
+                flex-direction:column;
+                display:flex;
+                justify-content: center;
+                background-color: aqua;
+
+            }
+            .di{
+                justify-content: center;
+                flex-direction:column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LOGIN PAGE</h1>
+        <form  onclick="return login();"id="myForm" action="note.html">
+         <div class="di">   
+        <input type="text" class="input" placeholder="enter the name">
+        <input type="password" class="pass" placeholder="enter the password">
+        <button class="btn">submit</button>
+        </div>
+        </form>
+        <a href="lunch.html">link</a>
+
+
+    </body>
+    <script>
+        function login(){
+            let name=document.querySelector('.input').value;
+            let pass=document.querySelector('.name').value;
+            if(name==='ranjith'&&pass==='554'){
+                return true;
+            }
+            else{
+                return false;
+                alert('enter the correct password');
+            }
+        }
+    </script>
+</html>
